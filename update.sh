@@ -11,9 +11,6 @@ echo "2018.11.21更新版本，优化磁力下载功能-可选下载文件。"
 echo "2018.12.04更新版本，优化磁力下载界面"
 echo "本次更新会删除离线下载历史数据"
 del_rubbish
-#之前的更新操作
-install_aria2
-update_config
 supervisorctl -c supervisord.conf restart pyone
 echo "---------------------------------------------------------------"
 echo "更新完成！"
