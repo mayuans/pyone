@@ -92,7 +92,7 @@ function open_port(){
             service iptables save
             service iptables restart
         else
-            firewall-cmd --zone=public --add-port=34567/tcp --permanent
+            firewall-cmd --zone=public --add-port=11881/tcp --permanent
             firewall-cmd --reload
         fi
 }
