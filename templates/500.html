@@ -13,7 +13,7 @@ redis-cli
 </code></pre>
 </li>
 <li><p>如清空Redis缓存还有问题，可手动运行网站查看错误</p>
-<pre><code class="lang-text">supervisorctl -c supervisord.conf stop pyone &amp;&amp; gunicorn -k eventlet -b 0:34567 run:app
+<pre><code class="lang-text">supervisorctl -c supervisord.conf stop pyone &amp;&amp; gunicorn -k eventlet -b 0:11881 run:app
 </code></pre>
 <p>然后再访问页面，查看ssh的错误提示</p>
 </li>
