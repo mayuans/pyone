@@ -88,7 +88,7 @@ function install_aria2(){
 function open_port(){
     if [ -e "/etc/sysconfig/iptables" ]
         then
-            iptables -I INPUT -p tcp --dport 34567 -j ACCEPT
+            iptables -I INPUT -p tcp --dport 11881 -j ACCEPT
             service iptables save
             service iptables restart
         else
